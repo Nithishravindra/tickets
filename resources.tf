@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda_role" {
-  name = "lambda_role-tbd-101"
+  name = "lambda_role-tbd-101-"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"

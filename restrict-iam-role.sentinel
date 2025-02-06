@@ -3,11 +3,11 @@ import "tfplan/v2" as tfplan
 
 # Define the rule to restrict IAM role creation
 restrict_iam_role = rule {
-  all tfplan.resources.aws_iam_role as _, role {
-    role.approved == true
-  }
+	all tfplan.resources.aws_iam_role as _, role {
+		role.approved == true
+	}
 }
 
 main = rule {
-  restrict_iam_role
+    false
 }
