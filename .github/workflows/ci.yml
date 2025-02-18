@@ -3,7 +3,7 @@ name: Empty Workflow
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   empty-job:
