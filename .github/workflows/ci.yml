@@ -3,7 +3,7 @@ name: Terraform CI
 on:
   pull_request:
     branches:
-      - main  # Adjust to your default branch
+      - dev
 
 jobs:
   terraform:
